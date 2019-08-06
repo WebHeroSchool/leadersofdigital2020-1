@@ -1,10 +1,17 @@
-const path = require('path');
+const merge = require('webpack-merge');
 
-module.exports = {
-  entry: './src/index.js',
+// Webpack configuration files
+const common_config = require('./configs/webpack/webpack.common');
+const develop_config = require('./configs/webpack/webpack.develop');
 
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-};
+const mode = process.env.ENV ? process.env.ENV : 'develop';
+
+switch(mode) {
+  case 'develop': {
+    return merge(common_config, develop_config);
+  }
+
+  default: {
+    return common_config;
+  }
+}

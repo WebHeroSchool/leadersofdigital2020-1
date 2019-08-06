@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "React bag application to quick extract react applications (by Pavel Tretyakov)",
   "main": "index.js",
+  "scripts": {
+    "start": "ENV=develop node node_modules/.bin/webpack-dev-server"
+  },
   "repository": "git@bitbucket.org:ptretyakov/react-bag.git",
   "author": "Pavel Tretyakov <tretyakovpavel.ru@gmail.com>",
   "license": "MIT",
@@ -10,6 +13,8 @@
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   }
 }
