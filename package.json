@@ -1,0 +1,9 @@
+{
+  "name": "react-bag",
+  "version": "0.0.0",
+  "description": "React bag application to quick extract react applications (by Pavel Tretyakov)",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:ptretyakov/react-bag.git",
+  "author": "Pavel Tretyakov <tretyakovpavel.ru@gmail.com>",
+  "license": "MIT"
+}
