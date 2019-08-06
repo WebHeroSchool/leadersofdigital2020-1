@@ -2,6 +2,7 @@
 *.swp
 *.log
 *.lock
+*-lock.json
 
 // Folders
 node_modules/
