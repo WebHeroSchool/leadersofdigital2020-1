@@ -1,1 +1,7 @@
+// Files
 *.swp
+*.log
+*.lock
+
+// Folders
+node_modules/

@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "git@bitbucket.org:ptretyakov/react-bag.git",
   "author": "Pavel Tretyakov <tretyakovpavel.ru@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
 }
