@@ -1,0 +1,18 @@
+
+font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/roboto/Roboto-Regular.ttf'); /*IE9*/
+  src: url('assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'), /*IE6-8*/
+}
+
+font-face {
+  font-family: 'Roboto Light';
+  src: url('assets/fonts/roboto/Roboto-Light.ttf'); /*IE9*/
+  src: url('assets/fonts/roboto/Roboto-Light.ttf') format('truetype'), /*IE6-8*/
+}
+
+font-face {
+  font-family: 'Roboto Medium';
+  src: url('assets/fonts/roboto/Roboto-Medium.ttf'); /*IE9*/
+  src: url('assets/fonts/roboto/Roboto-Medium.ttf') format('truetype'), /*IE6-8*/
+}
