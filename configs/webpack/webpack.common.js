@@ -19,6 +19,12 @@ module.exports = {
     rules: [ scssRule, imageRule, fontRule ],
   },
 
+  resolve: {
+    alias: {
+      assets: root(['src', 'assets']),
+    }
+  },
+
   plugins: [
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
