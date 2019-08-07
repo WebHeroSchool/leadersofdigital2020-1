@@ -2,6 +2,10 @@ const root = require('../helpers/root');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// Module rules
+const scssRule = require('./rules/scss.rule');
+const imageRule = require('./rules/image.rule');
+
 module.exports = {
   entry: './src/index.js',
 
@@ -11,14 +15,7 @@ module.exports = {
   },
 
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader',
-      ],
-    }],
+    rules: [ scssRule, imageRule ],
   },
 
   plugins: [
