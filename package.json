@@ -4,7 +4,8 @@
   "description": "React bag application to quick extract react applications (by Pavel Tretyakov)",
   "main": "index.js",
   "scripts": {
-    "start": "ENV=develop node node_modules/.bin/webpack-dev-server"
+    "start": "NODE_ENV=develop node node_modules/.bin/webpack-dev-server",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack"
   },
   "repository": "git@bitbucket.org:ptretyakov/react-bag.git",
   "author": "Pavel Tretyakov <tretyakovpavel.ru@gmail.com>",
