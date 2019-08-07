@@ -1,2 +1,2 @@
-# React Bag
-React bag application to quick extract react applications (by Pavel Tretyakov)
+# Bag construction application
+Application to quick extract different javascript applications (by Pavel Tretyakov)
