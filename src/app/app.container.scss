@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__nav {
+    margin: 13px 0px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    &-item:not(:first-child) {
+      margin-left: 13px;
+    }
+  }
+}

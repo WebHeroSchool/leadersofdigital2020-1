@@ -1,19 +1,21 @@
-import React, { PureComponent } from 'react';
 import { hot } from 'react-hot-loader/root';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
+import React, { PureComponent } from 'react';
 
+import routes from './app.routes';
 import * as appActions from './app.actions';
 
-import Home from './home/home';
-
+import './app.container.scss';
 import bagImage from 'assets/images/bag.png'
 
 class App extends PureComponent {
   render() {
-    const { title, updateTitle } = this.props;
+    const { title, updateTitle, history } = this.props;
   
     return (
-      <div>
+      <div className="app">
         <p>
           {title}
         </p>
@@ -26,7 +28,16 @@ class App extends PureComponent {
           </button>
         </div>
 
-        <Home />
+        <ul className="app__nav">
+          <li>
+            <Link className="app__nav-item"  to="/">Home</Link>
+            <Link className="app__nav-item" to="/contacts">Contacts</Link>
+          </li>
+        </ul>
+
+        <ConnectedRouter history={history}>
+          {routes}
+        </ConnectedRouter>
       </div>
     );
   }
