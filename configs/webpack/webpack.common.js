@@ -26,6 +26,7 @@ module.exports = {
   plugins: [
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
+      favicon: 'src/favicon.ico',
       filename: 'index.html',
       template: root(['src', 'index.html']),
     }),
