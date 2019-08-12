@@ -19,6 +19,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
+      app: root(['src', 'app']),
       assets: root(['src', 'assets']),
     }
   },
