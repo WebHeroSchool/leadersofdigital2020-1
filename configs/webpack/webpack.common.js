@@ -12,6 +12,10 @@ const image_rule = require('./rules/image.rule');
 module.exports = {
   entry: './src/index.jsx',
 
+  output: {
+    filename: '[name].bundle.js',
+    path: root(['dist']),
+  },
 
   module: {
     rules: [
