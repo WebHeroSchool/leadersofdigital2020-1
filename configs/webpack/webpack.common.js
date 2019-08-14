@@ -3,18 +3,24 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Module rules
-const jsxRule = require('./rules/jsx.rule');
-const scssRule = require('./rules/scss.rule');
-const fontRule = require('./rules/font.rule');
-const jsonRule = require('./rules/json.rule');
-const imageRule = require('./rules/image.rule');
+const jsx_rule = require('./rules/jsx.rule');
+const scss_rule = require('./rules/scss.rule');
+const font_rule = require('./rules/font.rule');
+const json_rule = require('./rules/json.rule');
+const image_rule = require('./rules/image.rule');
 
 module.exports = {
   entry: './src/index.jsx',
 
 
   module: {
-    rules: [ scssRule, imageRule, fontRule, jsonRule ],
+    rules: [
+      jsx_rule,
+      scss_rule,
+      image_rule,
+      font_rule,
+      json_rule,
+    ],
   },
 
   resolve: {
