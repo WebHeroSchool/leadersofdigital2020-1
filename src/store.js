@@ -12,11 +12,9 @@ import monitorReducersEnhancer from './shared/enhancers/monitor-reducers';
 export const history = createBrowserHistory();
 
 export default function configureStore(preloadedState) {
-  const middlewares = [
-    thunkMiddleware,
-    loggerMiddleware,
-    routerMiddleware(history),
-  ];
+  const middlewares = __DEVELOP__
+    ? [ thunkMiddleware, loggerMiddleware, routerMiddleware(history) ]
+    : [ thunkMiddleware, routerMiddleware(history) ];
 
   let enhancer;
   if (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
@@ -24,11 +22,18 @@ export default function configureStore(preloadedState) {
       applyMiddleware(...middlewares)
     );
   } else {
-    enhancer = compose(
-      applyMiddleware(...middlewares),
-      DevTools.instrument(),
-      persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
-    );
+    const composes = __DEVELOP__
+      ? [
+        applyMiddleware(...middlewares),
+        DevTools.instrument(),
+        persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
+      ]
+      : [
+        applyMiddleware(...middlewares),
+        persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
+      ];
+
+    enhancer = compose(...[composes]);
   }
 
   const store = createStore(
