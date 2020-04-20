@@ -33,7 +33,7 @@ export default function configureStore(preloadedState) {
         persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
       ];
 
-    enhancer = compose(...[composes]);
+    enhancer = compose(...composes);
   }
 
   const store = createStore(
