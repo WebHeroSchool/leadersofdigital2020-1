@@ -1,0 +1,39 @@
+.main {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(234.84deg, #061F54 0.61%, #3C86BE 99.12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main__logo {
+  margin-top: 179px;
+  margin-bottom: 78px;
+}
+
+.main__header {
+  width: 1137px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 82px;
+  color: #fff;
+}
+
+.main__progress-bar {
+  height: 10px;
+  width: 1152px;
+  border: 1px solid #fff;
+  border-radius: 17px;
+  margin-bottom: 43px;
+}
+
+.main__progress {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  color: #fff;
+}
