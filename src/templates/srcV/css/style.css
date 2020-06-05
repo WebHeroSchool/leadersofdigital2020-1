@@ -22,11 +22,11 @@
 
 .introduction_flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.introduction_logo {
-    background: url('../img/logo/logo.png') center no-repeat;
+.logo {
+    padding-top: 86px;
 }
 .introduction_title {
     font-family: Roboto;
@@ -34,6 +34,8 @@
     font-weight: 500;
     font-size: 24px;
     color: #000000;
+    padding-top: 109px;
+    margin-bottom: 55px;
 }
 
 
