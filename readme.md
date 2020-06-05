@@ -1,5 +1,5 @@
-# Web Hero School construction application
-Application to quick extract different javascript applications (by Pavel Tretyakov)
+# Web Hero School
+Цифровой Прорыв 2020. Первый отряд | Павел Третьяков, Анастасия Варабей, Серегей Новоселов, Иван Буровкин, Вероника
 
 ## Install
 To init project you can use npm or yarn, by the next instructions will use yarn
