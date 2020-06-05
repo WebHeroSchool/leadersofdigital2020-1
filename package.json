@@ -1,14 +1,15 @@
 {
-  "name": "react-bag",
+  "name": "leadersofdigital2020-1",
   "version": "0.0.0",
-  "description": "React bag application to quick extract react applications (by Pavel Tretyakov)",
+  "description": "leadersofdigital2020-1 (by Web Hero School)",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=develop node node_modules/.bin/webpack-dev-server",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack"
+    "build": "NODE_ENV=production node node_modules/.bin/webpack",
+    "start:windows": "webpack-dev-server"
   },
-  "repository": "git@bitbucket.org:ptretyakov/react-bag.git",
-  "author": "Pavel Tretyakov <tretyakovpavel.ru@gmail.com>",
+  "repository": "git@github.com:WebHeroSchool/leadersofdigital2020-1.git",
+  "author": "Web Hero School <tretyakovpavel.ru@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",

@@ -1,7 +1,7 @@
 import { UPDATE_TITLE} from './app.constants';
 
 const initState = {
-  title: 'Bag React Redux application',
+  title: 'Application',
 };
 
 const appReducer = (state = initState, action) => {

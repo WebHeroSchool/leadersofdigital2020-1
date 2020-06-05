@@ -1,4 +1,4 @@
-# Bag construction application
+# Web Hero School construction application
 Application to quick extract different javascript applications (by Pavel Tretyakov)
 
 ## Install
@@ -23,6 +23,11 @@ To compile project and run dev server run:
 yarn start
 ```
 
+For windows machines
+```bash
+npm start:widnows
+```
+
 Webpack start dev server on 9000 port by default.
 To change port you can:
 
@@ -30,7 +35,6 @@ To change port you can:
 
 ```json
 "start": "NODE_ENV=develop PORT=YOUR_PORT node node_modules/.bin/webpack-dev-server",
-
 ```
 
 - Set spicific port on start command:
