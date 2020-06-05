@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import React, { PureComponent } from 'react';
 
-import routes from './app.routes';
+import { AppRoutes } from './app.routes';
 import * as appActions from './app.actions';
 
 import './app.container.scss';
@@ -12,21 +12,10 @@ import bagImage from 'assets/images/bag.png'
 
 class App extends PureComponent {
   render() {
-    const { title, updateTitle, history } = this.props;
+    const { title, updateTitle, history, auth } = this.props;
   
     return (
       <div className="app">
-        <p>
-          {title}
-        </p>
-
-        <img src={bagImage} alt="Bag Logo" />
-
-        <div>
-          <button onClick={() => updateTitle('Updated application title')}>
-            Update application title
-          </button>
-        </div>
 
         <ul className="app__nav">
           <li>
@@ -36,7 +25,7 @@ class App extends PureComponent {
         </ul>
 
         <ConnectedRouter history={history}>
-          {routes}
+          <AppRoutes auth={auth} />
         </ConnectedRouter>
       </div>
     );
@@ -45,6 +34,7 @@ class App extends PureComponent {
 
 const mapStateToProps = (state) => {
   return {
+    auth: state.app.auth,
     title: state.app.title,
   };
 }

@@ -1,6 +1,7 @@
 import { UPDATE_TITLE} from './app.constants';
 
 const initState = {
+  auth: false,
   title: 'Application',
 };
 
