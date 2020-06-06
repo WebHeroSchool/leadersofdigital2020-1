@@ -6,13 +6,13 @@ import {Subtitle} from './shared/subtitle/subtitle';
 import { Button } from './shared/button/button';
 import { Videoframe } from './shared/videoframe/videoframe';
 import { Contact} from './shared/contact/contact';
+import { Important} from './shred/important/important';
 
 export const Components = () => {
     return (
         <div>
         
             <div>
-
                 <Button></Button>
             </div>
 
@@ -30,6 +30,10 @@ export const Components = () => {
             <div>
                 <Contact></Contact>
             </div>
+            <div>
+                <Important></Important>
+            </div>
+
         </div>
 
            
