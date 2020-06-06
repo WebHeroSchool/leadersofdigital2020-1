@@ -1,5 +1,5 @@
 import {
-  UPDATE_TITLE
+  UPDATE_TITLE, AUTHENTICATE,
 } from './app.constants';
 
 export const updateTitle = (title = '') => {
@@ -8,3 +8,10 @@ export const updateTitle = (title = '') => {
     payload: title,
   };
 };
+
+export const auth = () => {
+  return {
+    type: AUTHENTICATE,
+    payload: true,
+  }
+}
