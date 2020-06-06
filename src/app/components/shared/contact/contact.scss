@@ -1,0 +1,58 @@
+.ui-img {
+    position: relative;
+    top: 60px;
+    left: 15px;
+    width: 176px;
+    height: 176px;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.ui-block {
+    width: 218px;
+    height: 190px;
+    background: #F5F4F4;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.19);
+
+}
+
+.ui-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 80px 20px 11px 20px;
+}
+
+.ui-status {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 11px 40px 19px 40px;
+}
+
+.ui-mail {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #05528C;
+}
+
+.ui-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ui-contact-mail__img {
+    padding-right: 4px;
+    padding-top: 4px;
+}

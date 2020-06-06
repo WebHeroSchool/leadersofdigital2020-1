@@ -1,13 +1,17 @@
 import React from 'react';
 
-import { Button } from './shared/button/button';
+
 import { Bar} from './shared/bar/bar';
-import { Subtitle } from './shared/subtitle/subtitle';
-import { DemoComponent } from './shared/demo-component/demo-component';
+import {Subtitle} from './shared/subtitle/subtitle';
+import { Button } from './shared/button/button';
+import { Videoframe } from './shared/videoframe/videoframe';
+import { Contact} from './shared/contact/contact';
+import { Important} from './shared/important/important';
 
 export const Components = () => {
     return (
         <div>
+        
             <div>
                 <Button></Button>
             </div>
@@ -20,9 +24,18 @@ export const Components = () => {
                 <Subtitle></Subtitle>
             </div>
 
-            <div style={{ marginTop: 13, border: '1px dashed #c6c6c6' }}>
-                <DemoComponent></DemoComponent>
+            <div>
+                <Videoframe></Videoframe>
             </div>
+            <div>
+                <Contact></Contact>
+            </div>
+            <div>
+                <Important></Important>
+            </div>
+
         </div>
+
+           
     );
 }
