@@ -4,7 +4,7 @@ import React from 'react';
 import { Bar} from './shared/bar/bar';
 import {Subtitle} from './shared/subtitle/subtitle';
 import { Button } from './shared/button/button';
-import { DemoComponent } from './shared/demo-component/demo-component';
+import { Contact} from './shared/contact/contact';
 
 
 export const Components = () => {
@@ -24,9 +24,10 @@ export const Components = () => {
             </div>
        
 
-            <div style={{ marginTop: 13, border: '1px dashed #c6c6c6' }}>
-                <DemoComponent></DemoComponent>
+            <div>
+                <Contact></Contact>
             </div>
-            </div>
+
+         </div>
     );
 }

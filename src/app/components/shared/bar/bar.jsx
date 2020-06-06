@@ -11,5 +11,7 @@ const color = [
 ];
 
 export const Bar = () => {
-  return <div className="ui-bar">Права, обязанности и ответственность</div>;
+  return (
+    <div className="ui-bar">Права, обязанности и ответственность</div>
+  );
 };
