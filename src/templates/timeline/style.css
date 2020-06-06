@@ -3,19 +3,66 @@ body {
 }
 
 .icon {    
+    position: relative;
     width: 218px;
     height: 278px;
 }
 .icon__avatar {
-    margin: 0;    
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    border-radius: 50%;  
     width: 176px;
     height: 176px;
+    background: url(/templates/timeline/image/4728de9961109323f356d6d399c4ed41.jpg);
     border: 3px solid #FFFFFF;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
 }
 
 .icon__user {
+    position: relative;
     width: 218px;
     height: 190px;
     background: #F5F4F4;
 }
+
+.user__decs {
+    width: 177px;
+    height: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.user__position {
+    width: 128px;
+    height: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.user__email {
+    width: 82px;
+    height: 14px;
+    left: 193px;
+    top: 3683px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #05528C;
+}
+
