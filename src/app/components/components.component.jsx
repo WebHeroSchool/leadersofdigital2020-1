@@ -1,22 +1,29 @@
 import React from 'react';
 
 import { Button } from './shared/button/button';
-import { Button1 } from './shared/button1/button1';
+import { Bar} from './shared/bar/bar';
+import { Subtitle } from './shared/subtitle/subtitle';
+import { Videoframe } from './shared/videoframe/videoframe'
 
 export const Components = () => {
     return (
         <div>
-            My awesome first component!
-            <hr/>
             <div>
-                <p>Компонента кнопки:</p>
                 <Button></Button>
             </div>
 
             <div>
-            <p>Компонента кнопки:</p>
-                <Button1></Button1>
+                <Bar></Bar>
             </div>
+
+            <div>
+                <Subtitle></Subtitle>
+            </div>
+
+            <div>
+                <Videoframe></Videoframe>
+            </div>
+
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import { UPDATE_TITLE} from './app.constants';
+import { UPDATE_TITLE, AUTHENTICATE } from './app.constants';
 
 const initState = {
   auth: false,
@@ -7,6 +7,10 @@ const initState = {
 
 const appReducer = (state = initState, action) => {
   switch (action.type) {
+    case AUTHENTICATE: {
+      return { ...state, title: action.payload }
+    }
+
     case UPDATE_TITLE: {
       return { ...state, title: action.payload };
     }
