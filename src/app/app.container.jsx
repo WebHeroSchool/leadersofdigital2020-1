@@ -9,23 +9,24 @@ import * as appActions from './app.actions';
 
 import './app.container.scss';
 import bagImage from 'assets/images/bag.png'
+import {AUTHENTICATE} from "app/app.constants";
 
 class App extends PureComponent {
   render() {
-    const { title, updateTitle, history, auth } = this.props;
-  
+    const { title, updateTitle, history, auth, login } = this.props;
+
     return (
       <div className="app">
 
-        <ul className="app__nav">
-          <li>
-            <Link className="app__nav-item"  to="/">Home</Link>
-            <Link className="app__nav-item" to="/contacts">Contacts</Link>
-          </li>
-        </ul>
+        {/*<ul className="app__nav">*/}
+        {/*  <li>*/}
+        {/*    <Link className="app__nav-item"  to="/">Home</Link>*/}
+        {/*    <Link className="app__nav-item" to="/contacts">Contacts</Link>*/}
+        {/*  </li>*/}
+        {/*</ul>*/}
 
         <ConnectedRouter history={history}>
-          <AppRoutes auth={auth} />
+          <AppRoutes auth={auth} login={login} />
         </ConnectedRouter>
       </div>
     );
@@ -41,6 +42,7 @@ const mapStateToProps = (state) => {
 
 const mapDispathToProps = (dispatch) => {
   return {
+    login: (switchAuthTo) => dispatch(appActions.login(switchAuthTo)),
     updateTitle: title => dispatch(appActions.updateTitle(title)),
   }
 }

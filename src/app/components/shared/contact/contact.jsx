@@ -4,6 +4,17 @@ import imgProfile from './img/profile.svg';
 import imgMail from './img/mail.png';
 import imgTicks from './img/ticks.png';
 
+import contactImageOne from './img/mail.png';
+
+export const contactsData = [
+  {
+    fio: '',
+    email: '',
+    status: '',
+    photo: contactImageOne,
+  },
+];
+
 export const Contact = () => {
     return (
         <div className="ui-contact">
