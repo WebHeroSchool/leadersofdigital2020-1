@@ -25,7 +25,7 @@ import imgManSecond from './img/man2.png';
         },
 
         {
-            img: imgMan2,
+            img: imgManSecond,
             fio: 'Соколов Иван Иванович',
             status:'Технический директор',
             mail: 'ivan@gmail.com'

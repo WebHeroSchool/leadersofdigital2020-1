@@ -7,6 +7,7 @@ import { Button } from './shared/button/button';
 import { Videoframe } from './shared/videoframe/videoframe';
 import { Contact} from './shared/contact/contact';
 import { Important} from './shared/important/important';
+import { Search} from './shared/search/search';
 
 export const Components = () => {
     return (
@@ -32,6 +33,10 @@ export const Components = () => {
             </div>
             <div>
                 <Important></Important>
+            </div>
+
+            <div>
+                <Search></Search>
             </div>
 
         </div>
