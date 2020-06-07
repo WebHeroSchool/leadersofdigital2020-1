@@ -6,8 +6,8 @@ import img from './img/search.png';
 export const Search = () => {
     return (
         <div className="ui-search">
-            <input type="text" placeholder="Поиск по слову..."/>
-            <img src={img} alt=""/>
+             <img src={img} alt="search" className="ui-search"/>
+            <input  className="search" type="text" placeholder="Поиск по слову..."/>
         </div>
     );
 }
