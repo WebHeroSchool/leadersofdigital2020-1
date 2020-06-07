@@ -1,3 +1,5 @@
+import { push } from 'connected-react-router';
+
 import {
   UPDATE_TITLE, AUTHENTICATE,
 } from './app.constants';
@@ -9,9 +11,9 @@ export const updateTitle = (title = '') => {
   };
 };
 
-export const auth = () => {
-  return {
-    type: AUTHENTICATE,
-    payload: true,
+export const login = (username, password) => {
+  return (dispatch) => {
+    dispatch(push('/home'))
+    dispatch({ type: AUTHENTICATE, payload: true })
   }
 }

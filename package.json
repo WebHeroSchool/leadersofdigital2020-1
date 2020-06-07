@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=develop node node_modules/.bin/webpack-dev-server",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack",
     "start:windows": "webpack-dev-server",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack",
+    "build:windows": "webpack",
     "server": "node server.js",
     "server:watch": "nodemon --unhandled-rejections=none  server.js"
   },
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "connected-react-router": "^6.5.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "history": "^4.9.0",
     "react": "^16.8.6",

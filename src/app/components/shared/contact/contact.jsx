@@ -40,6 +40,8 @@ import imgManSecond from './img/man2.png';
 
       ];
 
+import contactImageOne from './img/mail.png';
+
 export const Contact = () => {
     return (
         <div className="ui-contact">

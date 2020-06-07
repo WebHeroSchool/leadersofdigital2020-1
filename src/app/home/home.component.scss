@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 1200px;
+  }
+
+  &__header {
+    display: flex;
+    padding: 49px 59px;
+    min-height: 350px;
+    flex-direction: column;
+    background-image: url("./images/header-iamge.png");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &-title {
+      color: #fff;
+      font-size: 42px;
+
+      & p:first-child {
+        font-family: 'Roboto Light';
+      }
+    }
+  }
+
+  &__bar {
+    &-content {
+      display: flex;
+      text-align: justify;
+
+      &_left, &_right {
+        width: 49%;
+        margin: 50px 0;
+      }
+
+      &_center {
+        width: 3px;
+        z-index: -1;
+        margin: 0 10px;
+        background-color: #fff;
+      }
+    }
+  }
+}

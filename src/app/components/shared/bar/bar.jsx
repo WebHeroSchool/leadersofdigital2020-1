@@ -1,19 +1,10 @@
 import React from "react";
 import "./bar.scss";
 
-
-const color = [
-  "#7E0202",
-  "#06895A",
-  "#0097AC",
-  "#B3A20A",
-  "#8F0056",
-  "#E48C08"
-];
-
-
-export const Bar = () => {
+export const Bar = ({ title, color }) => {
   return (
-    <div className="ui-bar">Права, обязанности и ответственность</div>
+    <div className="ui-bar card card-2" style={{
+      backgroundColor: color
+    }}>{ title }</div>
   );
 }
