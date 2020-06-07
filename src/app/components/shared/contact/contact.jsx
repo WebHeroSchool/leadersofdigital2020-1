@@ -42,15 +42,6 @@ import imgManSecond from './img/man2.png';
 
 import contactImageOne from './img/mail.png';
 
-export const contactsData = [
-  {
-    fio: '',
-    email: '',
-    status: '',
-    photo: contactImageOne,
-  },
-];
-
 export const Contact = () => {
     return (
         <div className="ui-contact">

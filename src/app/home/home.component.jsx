@@ -6,15 +6,9 @@ import {HOST} from "app/app.constants";
 import {Subtitle} from "app/components/shared/subtitle/subtitle";
 import {Bar} from "app/components/shared/bar/bar";
 
-const contacts = [
-  {
-    fio: 'sdfsdf',
-    email: 'sdfasfddf',
-    position: '',
-  },
-
-//  ...
-];
+const randomFromArray = (arr) => {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
 export default () => {
   const [ data, setData ] = useState(null);
@@ -29,16 +23,10 @@ export default () => {
     fetchData();
   }), []);
 
-  // const color = [
-  //   "#7E0202",
-  //   "#06895A",
-  //   "#0097AC",
-  //   "#E48C08",
-  //   "#B3A20A",
-  //   "#8F0056",
-  // ];
-
-  const colors = ['#2196F3', '#03A9F4', '#00BCD4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107'];
+  const colors = [
+    '#2196F3', '#03A9F4', '#00BCD4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107',
+    "#7E0202", "#06895A", "#0097AC", "#E48C08", "#B3A20A", "#8F0056",
+  ];
 
   return (
     <section className="home">
@@ -61,12 +49,14 @@ export default () => {
         <main>
           {
             data
-              ? data.subtitles.map(({ title, nextContent: content }, index) => {
+              ? data.subtitles
+                  .map(o => ({ ...o, color: randomFromArray(colors) }))
+                  .map(({ title, nextContent: content, color }, index) => {
                 const gradient = 'background: linear-gradient(180deg, #06895A 0%, #0097AC 100%);'
 
                 return (
                   <div className="home__bar" key={`bar-${index}`}>
-                    <Bar title={title} />
+                    <Bar title={title} color={color} />
 
                     <div className="home__bar-content">
                       <div className="home__bar-content_left">
