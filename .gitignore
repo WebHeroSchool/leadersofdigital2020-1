@@ -1,15 +1,15 @@
-// Files
+# Files
 *.swp
 *.log
 *.lock
 *-lock.json
 
-// Folders
+# Folders
 dist
 node_modules
 
-// Config files
+# Config files
 configs/dev.json
 
-// IDE
+# IDE
 .idea
