@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production node node_modules/.bin/webpack",
     "start:windows": "webpack-dev-server",
     "server": "node server.js",
-    "server:watch": "nodemon server.js"
+    "server:watch": "nodemon --unhandled-rejections=none  server.js"
   },
   "repository": "git@github.com:WebHeroSchool/leadersofdigital2020-1.git",
   "author": "Web Hero School <tretyakovpavel.ru@gmail.com>",
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "connected-react-router": "^6.5.2",
+    "express": "^4.17.1",
     "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
